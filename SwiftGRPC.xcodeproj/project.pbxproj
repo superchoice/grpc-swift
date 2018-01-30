@@ -4423,6 +4423,374 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C79AA4D1202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Test;
+		};
+		C79AA4D2202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Test;
+		};
+		C79AA4D3202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Test;
+		};
+		C79AA4D4202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/CgRPC/include",
+					"$(SRCROOT)/Sources/BoringSSL/include",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL",
+					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/gRPCTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/CgRPC/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = gRPCTests;
+			};
+			name = Test;
+		};
+		C79AA4D5202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/CgRPC/include",
+					"$(SRCROOT)/Sources/BoringSSL/include",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL",
+					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/gRPC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/CgRPC/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = gRPC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = gRPC;
+			};
+			name = Test;
+		};
+		C79AA4D6202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/CgRPC/include",
+					"$(SRCROOT)/Sources/BoringSSL/include",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/CgRPC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CgRPC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CgRPC;
+			};
+			name = Test;
+		};
+		C79AA4D7202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/BoringSSL/include",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/BoringSSL_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = BoringSSL;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = BoringSSL;
+			};
+			name = Test;
+		};
+		C79AA4D8202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/Czlib_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Czlib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Czlib;
+			};
+			name = Test;
+		};
+		C79AA4D9202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Test;
+		};
+		C79AA4DA202051C20008E77A /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Test;
+		};
+		C79AA4DB202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = OTA;
+		};
+		C79AA4DC202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = OTA;
+		};
+		C79AA4DD202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = OTA;
+		};
+		C79AA4DE202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/CgRPC/include",
+					"$(SRCROOT)/Sources/BoringSSL/include",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL",
+					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/gRPCTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/CgRPC/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = gRPCTests;
+			};
+			name = OTA;
+		};
+		C79AA4DF202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/CgRPC/include",
+					"$(SRCROOT)/Sources/BoringSSL/include",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL",
+					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/gRPC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/CgRPC/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/BoringSSL/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = gRPC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = gRPC;
+			};
+			name = OTA;
+		};
+		C79AA4E0202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/CgRPC/include",
+					"$(SRCROOT)/Sources/BoringSSL/include",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/CgRPC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CgRPC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CgRPC;
+			};
+			name = OTA;
+		};
+		C79AA4E1202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/BoringSSL/include",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/BoringSSL_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = BoringSSL;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = BoringSSL;
+			};
+			name = OTA;
+		};
+		C79AA4E2202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
+				);
+				INFOPLIST_FILE = SwiftGRPC.xcodeproj/Czlib_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Czlib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Czlib;
+			};
+			name = OTA;
+		};
+		C79AA4E3202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = OTA;
+		};
+		C79AA4E4202051C70008E77A /* OTA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = OTA;
+		};
 		OBJ_1007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4798,6 +5166,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_1007 /* Debug */,
+				C79AA4D6202051C20008E77A /* Test */,
+				C79AA4E0202051C70008E77A /* OTA */,
 				OBJ_1008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -4807,6 +5177,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_1333 /* Debug */,
+				C79AA4D7202051C20008E77A /* Test */,
+				C79AA4E1202051C70008E77A /* OTA */,
 				OBJ_1334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -4816,6 +5188,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_1651 /* Debug */,
+				C79AA4D8202051C20008E77A /* Test */,
+				C79AA4E2202051C70008E77A /* OTA */,
 				OBJ_1652 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -4825,6 +5199,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_1672 /* Debug */,
+				C79AA4D9202051C20008E77A /* Test */,
+				C79AA4E3202051C70008E77A /* OTA */,
 				OBJ_1673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -4834,6 +5210,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_1677 /* Debug */,
+				C79AA4DA202051C20008E77A /* Test */,
+				C79AA4E4202051C70008E77A /* OTA */,
 				OBJ_1678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -4843,6 +5221,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
+				C79AA4D1202051C20008E77A /* Test */,
+				C79AA4DB202051C70008E77A /* OTA */,
 				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -4852,6 +5232,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_941 /* Debug */,
+				C79AA4D2202051C20008E77A /* Test */,
+				C79AA4DC202051C70008E77A /* OTA */,
 				OBJ_942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -4861,6 +5243,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_947 /* Debug */,
+				C79AA4D3202051C20008E77A /* Test */,
+				C79AA4DD202051C70008E77A /* OTA */,
 				OBJ_948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -4870,6 +5254,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_965 /* Debug */,
+				C79AA4D4202051C20008E77A /* Test */,
+				C79AA4DE202051C70008E77A /* OTA */,
 				OBJ_966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -4879,6 +5265,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_983 /* Debug */,
+				C79AA4D5202051C20008E77A /* Test */,
+				C79AA4DF202051C70008E77A /* OTA */,
 				OBJ_984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
