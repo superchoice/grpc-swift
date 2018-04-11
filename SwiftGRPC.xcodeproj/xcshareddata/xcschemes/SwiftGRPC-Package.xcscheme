@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftGRPC::RootsEncoder"
-               BuildableName = "RootsEncoder"
-               BlueprintName = "RootsEncoder"
-               ReferencedContainer = "container:SwiftGRPC.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftGRPC::gRPC"
-               BuildableName = "gRPC.framework"
-               BlueprintName = "gRPC"
+               BlueprintIdentifier = "SwiftProtobuf::SwiftProtobufPluginLibrary"
+               BuildableName = "SwiftProtobufPluginLibrary.framework"
+               BlueprintName = "SwiftProtobufPluginLibrary"
                ReferencedContainer = "container:SwiftGRPC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,37 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftGRPC::BoringSSL"
-               BuildableName = "BoringSSL.framework"
-               BlueprintName = "BoringSSL"
-               ReferencedContainer = "container:SwiftGRPC.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftProtobuf::protoc-gen-swift"
-               BuildableName = "protoc-gen-swift"
-               BlueprintName = "protoc-gen-swift"
-               ReferencedContainer = "container:SwiftGRPC.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftProtobuf::SwiftProtobufPluginLibrary"
-               BuildableName = "SwiftProtobufPluginLibrary.framework"
-               BlueprintName = "SwiftProtobufPluginLibrary"
+               BlueprintIdentifier = "SwiftGRPC::Simple"
+               BuildableName = "Simple"
+               BlueprintName = "Simple"
                ReferencedContainer = "container:SwiftGRPC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -112,9 +70,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "zlib::zlib-example"
-               BuildableName = "zlib-example"
-               BlueprintName = "zlib-example"
+               BlueprintIdentifier = "SwiftGRPC::BoringSSL"
+               BuildableName = "BoringSSL.framework"
+               BlueprintName = "BoringSSL"
                ReferencedContainer = "container:SwiftGRPC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -126,9 +84,79 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "zlib::Czlib"
-               BuildableName = "Czlib.framework"
-               BlueprintName = "Czlib"
+               BlueprintIdentifier = "SwiftGRPC::Echo"
+               BuildableName = "Echo"
+               BlueprintName = "Echo"
+               ReferencedContainer = "container:SwiftGRPC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftGRPC::RootsEncoder"
+               BuildableName = "RootsEncoder"
+               BlueprintName = "RootsEncoder"
+               ReferencedContainer = "container:SwiftGRPC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftGRPC::protoc-gen-swiftgrpc"
+               BuildableName = "protoc-gen-swiftgrpc"
+               BlueprintName = "protoc-gen-swiftgrpc"
+               ReferencedContainer = "container:SwiftGRPC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftProtobuf::protoc-gen-swift"
+               BuildableName = "protoc-gen-swift"
+               BlueprintName = "protoc-gen-swift"
+               ReferencedContainer = "container:SwiftGRPC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Commander::Commander"
+               BuildableName = "Commander.framework"
+               BlueprintName = "Commander"
+               ReferencedContainer = "container:SwiftGRPC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftGRPC::SwiftGRPC"
+               BuildableName = "SwiftGRPC.framework"
+               BlueprintName = "SwiftGRPC"
                ReferencedContainer = "container:SwiftGRPC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -138,16 +166,15 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftGRPC::gRPCTests"
-               BuildableName = "gRPCTests.xctest"
-               BlueprintName = "gRPCTests"
+               BlueprintIdentifier = "SwiftGRPC::SwiftGRPCTests"
+               BuildableName = "SwiftGRPCTests.xctest"
+               BlueprintName = "SwiftGRPCTests"
                ReferencedContainer = "container:SwiftGRPC.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -159,7 +186,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -169,9 +195,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "SwiftGRPC::RootsEncoder"
-            BuildableName = "RootsEncoder"
-            BlueprintName = "RootsEncoder"
+            BlueprintIdentifier = "SwiftProtobuf::SwiftProtobufPluginLibrary"
+            BuildableName = "SwiftProtobufPluginLibrary.framework"
+            BlueprintName = "SwiftProtobufPluginLibrary"
             ReferencedContainer = "container:SwiftGRPC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
